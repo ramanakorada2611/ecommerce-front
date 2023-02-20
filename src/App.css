@@ -1,38 +1,264 @@
-.App {
-  text-align: center;
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family:  sans-serif;
+}
+.top-div{
+    display: flex;
+    justify-content: space-around;
+}
+.top-two{
+    display: flex;
+    justify-content: center;
+}
+.top-three{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:50px;
+}
+#first-select{
+    border: none;
+}
+#second-select{
+    border: none;
+}
+.top-head{
+    text-align: center;
+    color: purple;
+}
+.main-nav{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+}
+.second-navbar{
+    display: flex;
+    justify-content: center;
+}
+.main-nav1{
+   display: flex;
+   gap: 50px;
+}
+#dropdown-basic-button{
+   border: none;
+  background-color: black;
+}
+.active{
+    color: black;
+   
+    text-decoration: none;
+}
+.not-active{
+    color: red;
+text-decoration: none;
+}
+.home-image1{
+    background-image: linear-gradient(to left,rgb(246, 240, 240),pink,rgb(195, 50, 50)); 
+    /* background-image: url("https://tse4.mm.bing.net/th?id=OIP.QlIDf_rRs3xbU2kyg6E8dQHaF7&pid=Api&P=0"); */
+    height:80vh ;
+}
+.best-seller{
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.first-image-card-home{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: auto;
+    gap: 20px;
+    cursor: pointer;
+}
+.hover-effect:hover{
+    box-shadow: 0 0 15px -3px black;
+    cursor: pointer;
+}
+.blue-container{
+    padding: 100px;
+}
+.blue-head{
+    
+    margin-left: 200px;
+}
+.blue-para{
+    margin-left: 200px;
+}
+.blue-uline{
+    margin-left: 200px;
+    
+}
+.end-data-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap :20px;
+}
+.end-data{
+    width:400px;
+    height: 200px; 
+}
+.icon2{
+    margin-left: 50px;
+}
+.end-data-container1{
+    display: flex;
+    justify-content: space-between;
+}
+.iphone-bar{
+    width:100%;
+    height: 30px;
+    color: red;
+    background-color: black;
+    text-align: center;
+    
+    font-size: larger;
+}
+.side-bar-data{
+    display: flex;
+    flex-direction: column;
+    
+}
+.side-data1{
+    background-color: black;
+    width: 200px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+.side-data11{
+    display: grid;
+    grid-template-columns: auto auto;
+    color: red;
+    gap: 10px;
+}
+.side-data2{
+    background-color: black;
+    width: 200px;
+    height: 130px;
+    margin-bottom: 20px;
+}
+.side-data3{
+    background-color: black;
+    width: 200px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.side-data12{
+    display: flex;
+    gap: 15px;
+}
+.side-data4{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.button{
+    border: none;
+    width: 200px;
+    height: 30px;
+    background-color: black;
+    color: red;
+}
+.overall-iphone{
+    display: flex;
+    flex-direction: row;
+}
+.overall-iphone1{
+    display: flex;
+    flex-direction: column;
+}
+.overall-iphone2{
+    display: flex;
+    flex-direction: column;
+   
+}
+.iphone-color-container{
+    margin-left: 35px;
+    width: 60rem;
+    height: 300px;
+    padding: 50px;
+}
+.first-image-card-remaining{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    gap: 20px;
+    cursor: pointer;
+}
+.cross-max{
+    display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+@media screen and (max-width:400px) {
+    .cross-max{
+        display: block;
+    }
+    .top-div{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-nav{
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+        text-align: center;
+    }
+    .first-image-card-home{
+        display: grid;
+        grid-template-columns: auto auto ;
+        width: auto;
+        gap: 20px;
+        cursor: pointer;
+    }
+    .blue-container{
+        padding: 5px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    }
+    .blue-head{
+    
+        margin-left: 100px;
+    }
+    .blue-para{
+        margin-left: 100px;
+    }
+    .blue-uline{
+        margin-left: 100px;
+        
+    }
+    .justify-content-evenly{
+        display: flex;
+        flex-direction: column;
+    }
+    .end-data-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .end-data-container1{
+        display: flex;
+        flex-direction: column;
+    }
+    .end-data1{
+        margin-left: 40px;
+    }
+   .overall-iphone{
+    display: flex;
+    flex-direction: column;
+   }
+   .iphone-color-container{
+    margin-left: 3px;
+    width: 30rem;
+    height: 300px;
+    margin-top: 16px;
+   }
+   .first-image-card-remaining{
+    display: grid;
+    grid-template-columns: auto auto;
+   }
+   .iphone-bar{
+    width: 450px;
+   }
+   .side-bar-data{
+    margin-left: 100px;
+   }
 }
