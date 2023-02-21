@@ -5,10 +5,15 @@ import SideData from '../Components/SideData'
 import Shipping from '../Components/Shipping'
 import EndData from '../Components/EndData'
 import AppNavbarNew from '../Pages1/AppNavbarNew'
+import { useNavigate } from 'react-router-dom'
 
 // import AppRouterNew from '../Pages1/AppRouterNew'
 
 export default function Home() {
+  let Navigate=useNavigate();
+  const navFunction1=()=>{
+      Navigate('/store')
+    }
   const[data,setData]=useState([])
   useEffect(()=>{
     fetch("https://ecommerce-database-zepl-d65j69f9z-ramanakorada2611.vercel.app/homePage")
@@ -29,7 +34,7 @@ export default function Home() {
         })
       }
     </div><br/>
-    <div className='text-center'><u className='text-danger '>Load More</u></div><br/><br/>
+    <div className='text-center'><u className='text-danger ' onClick={navFunction1}>Load More</u></div><br/><br/>
     
     <div className='bg-dark text-danger blue-container '>
     <h2 className='blue-head'>Iphone 6 Plus</h2><br/>

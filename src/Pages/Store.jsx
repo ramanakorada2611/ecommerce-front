@@ -18,7 +18,7 @@ export default function Store() {
 <div className='iphone-bar'>Store/Accesories</div><br/><br/>
 
 <div className='overall-iphone'>
-  <div className='overall-iphone1ms-2'>
+  <div className='overall-iphone1 ms-2'>
     <div className='side-bar-data'>
        <div className='side-data1' >
         <h3 style={{color:"red"}}>Accesories</h3>

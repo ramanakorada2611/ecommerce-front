@@ -8,7 +8,8 @@ import Store from './../Pages/Store'
 import Accesories from './../Pages/Accesories'
 import AppNavbar from '../Components/AppNavbar'
 import PageNotFound from '../Pages1/PageNotFound'
-import CardPage from '../Components/CardPage'
+// import CardPage from '../Components/CardPage'
+import ExtraPage from '../Pages/ExtraPage'
 
 
 export default function AppRouter() {
@@ -24,7 +25,8 @@ export default function AppRouter() {
       <Route path='/ipad' element={<Ipad/>}/>
       <Route path='/macbook' element={<Macbook/>}/>
       <Route path='/accesories' element={<Accesories/>}/>
-      <Route path='/cardpage' element={<CardPage/>}/>
+      {/* <Route path='/cardpage' element={<CardPage/>}/> */}
+      <Route path='/extrapage' element={<ExtraPage/>}/>
       <Route path='*' element={<PageNotFound/>}/>
     </Routes>
     </BrowserRouter>

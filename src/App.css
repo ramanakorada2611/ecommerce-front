@@ -76,6 +76,10 @@ text-decoration: none;
     box-shadow: 0 0 15px -3px black;
     cursor: pointer;
 }
+.hover-effect1:hover{
+    box-shadow: 0 0 15px -3px black;
+    cursor: pointer;
+}
 .blue-container{
     padding: 100px;
 }
@@ -261,4 +265,41 @@ text-decoration: none;
    .side-bar-data{
     margin-left: 100px;
    }
+   
 }
+.btn-danger{
+    border: none;
+    background-color:black;
+    color: red;
+    border-radius: 3px;
+}
+.home-image{
+    height: 200px;
+
+}
+.extrapage-header1{
+    display: flex;
+    justify-content: space-around;
+}
+.extrapage-header2{
+    display: flex;
+    justify-content: space-around;
+}
+.extrapage-li{
+    display: flex;
+    list-style-type: none;
+    gap: 100px;
+}
+.extrapage-ul{
+    display: flex;
+    list-style-type: none;
+    gap: 120px;
+}
+.counting{
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    color: red;
+}
+

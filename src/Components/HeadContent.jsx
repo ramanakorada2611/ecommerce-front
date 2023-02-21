@@ -3,7 +3,10 @@ import { CgProfile } from 'react-icons/cg'
 import {AiOutlineSearch} from 'react-icons/ai'
 import { MdProductionQuantityLimits} from 'react-icons/md'
 import {ImCross} from 'react-icons/im'
+
+
 export default function HeadContent() {
+ 
   return (
     <>
     <ImCross className='cross-max'/>
@@ -25,7 +28,7 @@ export default function HeadContent() {
       
       <div className='top-three'>
       <section><CgProfile/>  my profile</section>
-      <section><MdProductionQuantityLimits/>  items</section>
+      <section><MdProductionQuantityLimits/><span >items</span></section>
       <section><AiOutlineSearch/>  search</section>
       </div>
 
